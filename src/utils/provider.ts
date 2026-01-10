@@ -1,0 +1,1 @@
+export const provider = ['quiknode','firebaseapp.com']

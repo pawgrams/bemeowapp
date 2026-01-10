@@ -1,0 +1,1 @@
+import {id} from './id';export const tkn=['b8ebb90266da774d50aa20a93a2108f9a5882032','d8d38d04-e609-4b90-a255-36c2c646f6c5',"AIzaSyCuYAUei5KLKS3KAEdvODRuaAiPYLWIY5g",id[0],id[1],id[3]];

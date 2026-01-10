@@ -1,0 +1,1 @@
+export const presaleAddress = "HoDLKSmpjt3BFwTSc2S4vkYcndrpB798bdSPoA3dn8WB"

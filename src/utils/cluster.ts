@@ -1,0 +1,1 @@
+export const cluster = ['mainnet','appspot.com'];

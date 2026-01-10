@@ -1,0 +1,359 @@
+@media (max-height: 768px) and (orientation: landscape),
+(max-height: 468px) and (orientation: landscape) {
+
+    .loading-screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        opacity: 1;
+        transition: opacity 1s ease-in-out; 
+        background-color: #1c1c1c;
+      }
+      .fade-in {
+        opacity: 1;
+      }
+      .fade-out {
+        opacity: 0;
+      }
+    .landscape-warning{
+      scale: 0.75;
+      transform-origin: top center;
+      transform: translate(320px, -10px);
+      isolation: isolate;
+      z-index: 3060;
+      width: 1200px;
+      font-size: 17px;
+    }
+    .loading-wrapper {
+        scale: 0.40;
+        transform-origin: top center;
+        transform: translate(-420px, -95px);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      .loader1 {
+        position: relative;
+        width: 400px;
+        height: 400px;
+      }
+      .loader2 {
+        position: relative;
+        width: 400px;
+        height: 400px;
+      }
+      
+      .loading-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 270px;
+        height: 270px;
+        transform: translate(-50%,-50%);
+        background-image: url('/public/loadingpage/logo512.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 9999;
+      }
+
+      .spinner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 10px solid transparent;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: spin 3s linear infinite;
+      }
+    
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+    .loader1 {
+        margin-left: -100px
+      }
+    .loader1 {
+        width: 100px;
+        aspect-ratio: 0.1;
+        display:grid;
+        animation: l26 6.5s infinite steps(832);
+      }
+      .loader1,
+      .loader1:before,
+      .loader1:after{
+        background:
+          radial-gradient(closest-side at 50% 12.5%,
+          #FFE419 10%,#0000) 50% 0/10% 80% repeat-y,
+          radial-gradient(closest-side at 2.5% 200%,
+          #FFE419 1%,#0000) 25% 0%/10% 80% repeat-x;
+      }
+      .loader1:before,
+      .loader1:after {
+        content: "";
+        grid-area: 1/1;
+        transform: rotate(60deg);
+      }
+      .loader1:after {
+        transform: rotate(120deg);
+      }
+      @keyframes l26 {
+        100% {transform:rotate(1turn)}
+      }
+      
+      .loader2 {
+        margin-left: 0px
+      }
+      .loader2 {
+        width: 100px;
+        aspect-ratio: 0.1;
+        display:grid;
+        animation: l26 6.5s infinite steps(832);
+        animation-delay: -0.5s; 
+      }
+      .loader2,
+      .loader2:before,
+      .loader2:after{
+        background:
+          radial-gradient(closest-side at 50% 12.5%,
+          #0B998B 10%,#0000) 50% 0/40% 80% repeat-y,
+          radial-gradient(closest-side at 2.5% 200%,
+          #0B998B 1%,#0000) 25% 0%/10% 80% repeat-x;
+      }
+      .loader2:before,
+      .loader2:after {
+        content: "";
+        grid-area: 1/1;
+        transform: rotate(60deg);
+      }
+      .loader2:after {
+        transform: rotate(120deg);
+      }
+      @keyframes l26 {
+        100% {transform:rotate(1turn)}
+      }
+      
+      .bemeow-font {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        width: 420px;
+        height: 420px;
+        margin-top: -5px;
+        transform: translate(-50%, -30%);
+        background-image: url('/public/loadingpage/bemeow-font-04.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 9999;
+      }
+
+      .records-font {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        width: 220px;
+        height: 220px;
+        margin-top: -9px;
+        transform: translate(-50%, 10%);
+        background-image: url('/public/loadingpage/records_white.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 9999;
+      }
+
+
+}
+
+
+
+/***********************************************************************/
+
+
+
+
+@media (max-height: 1920px) and (orientation: landscape){
+
+
+          .loading-screen {
+            max-height: 100%;
+            opacity: 1;
+            transition: opacity 1s ease-in-out; 
+            background-color: #1c1c1c;
+          }
+          .fade-in {
+            opacity: 1;
+          }
+          .fade-out {
+            opacity: 0;
+          }
+          .landscape-warning{
+            position: absolute;
+            margin-left: -320px;
+            margin-top: 300px;
+            width: 720px;
+            height: 220px;
+            font-size: 22px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 3060;
+          }
+          .loading-wrapper {
+            width: 100%;
+            height: 100%;
+            margin-left: 360px;
+            margin-top: 120px;
+          }
+          .loader1 {
+            position: relative;
+            width: 400px;
+            height: 400px;
+          }
+          .loader2 {
+            position: relative;
+            width: 400px;
+            height: 400px;
+          }
+          .loading-logo {
+            position: absolute;
+            width: 270px;
+            height: 270px;
+            background-image: url('/public/loadingpage/logo512.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 9999;
+          }
+
+          .spinner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 10px solid transparent;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 3s linear infinite;
+          }
+          @keyframes spin {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          .loader1 {
+            width: 100px;
+            aspect-ratio: 0.1;
+            display:grid;
+            animation: l26 6.5s infinite steps(832);
+          }
+          .loader1,
+          .loader1:before,
+          .loader1:after{
+            background:
+              radial-gradient(closest-side at 50% 12.5%,
+              #FFE419 10%,#0000) 50% 0/10% 80% repeat-y,
+              radial-gradient(closest-side at 2.5% 200%,
+              #FFE419 1%,#0000) 25% 0%/10% 80% repeat-x;
+          }
+          .loader1:before,
+          .loader1:after {
+            content: "";
+            grid-area: 1/1;
+            transform: rotate(60deg);
+          }
+          .loader1:after {
+            transform: rotate(120deg);
+          }
+          @keyframes l26 {
+            100% {transform:rotate(1turn)}
+          }
+          .loader2 {
+            width: 100px;
+            aspect-ratio: 0.1;
+            display:grid;
+            animation: l26 6.5s infinite steps(832);
+            animation-delay: -0.5s; 
+          }
+          .loader2,
+          .loader2:before,
+          .loader2:after{
+            background:
+              radial-gradient(closest-side at 50% 12.5%,
+              #0B998B 10%,#0000) 50% 0/40% 80% repeat-y,
+              radial-gradient(closest-side at 2.5% 200%,
+              #0B998B 1%,#0000) 25% 0%/10% 80% repeat-x;
+          }
+          .loader2:before,
+          .loader2:after {
+            content: "";
+            grid-area: 1/1;
+            transform: rotate(60deg);
+          }
+          .loader2:after {
+            transform: rotate(120deg);
+          }
+          @keyframes l26 {
+            100% {transform:rotate(1turn)}
+          }
+          .bemeow-font {
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            background-image: url('/public/loadingpage/bemeow-font-04.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 9999;
+          }
+          .records-font {
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            background-image: url('/public/loadingpage/records_white.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 9999;
+          }
+
+}
+
+
+
+/******************************************************************************/
+
+
+
+@media (min-height: 768px) and (orientation: landscape){
+
+      .loading-screen, .loading-wrapper,
+      .records-font, .bemeow-font, .loading-logo,
+      .spinner, .loader1, .loader2 {
+        content:none;
+        height: 0px;
+        visibility: hidden;
+        font: 0px;
+        transition: opacity 1s ease-in-out; 
+        background-color: #1c1c1c;
+      }
+      .landscape-warning{
+        visibility: visible;
+        left: 50%;
+      }
+
+}
